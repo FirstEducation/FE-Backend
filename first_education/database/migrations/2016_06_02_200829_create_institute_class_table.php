@@ -14,8 +14,8 @@ class CreateInstituteClassTable extends Migration
     {
         Schema::create('institute_classes', function (Blueprint $table) {
             $table->bigInteger('institute_id')->unsigned();;
-            $table->bigInteger('class_id')->unsigned();;
             $table->foreign('institute_id')->references('id')->on('institutes');
+            $table->bigInteger('class_id')->unsigned();;
             $table->foreign('class_id')->references('id')->on('classes');
 
         });
