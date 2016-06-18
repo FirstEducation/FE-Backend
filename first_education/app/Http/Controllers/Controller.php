@@ -14,6 +14,9 @@ class Controller extends BaseController
 	
 	public function add(){
 		
+		$c=	$a + $b;
+		 
+		return $c;
 	}
 }
 
