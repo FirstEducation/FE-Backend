@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/', function () {
+    return view('khushbuCv');
+});
+Route::get('/master', function () {
+    return view('layouts.master');
+});
+
